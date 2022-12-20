@@ -2,6 +2,7 @@ import React from 'react';
 import './ProductList.css';
 import ProductItem from '../ProductItem/ProductItem';
 import { useTelegram } from '../../hooks/useTelegram';
+import { useState } from 'react';
 
 const products = [
     { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
