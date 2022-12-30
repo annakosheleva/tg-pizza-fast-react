@@ -5,7 +5,7 @@ import { useTelegram } from '../../hooks/useTelegram';
 import { useState } from 'react';
 
 const products = [
-    { id: '1', title: '4 cheese', price: 15, description: 'size medium' },
+    { id: '1', img: '../../images/4cheese.jpg', title: '4 cheese', price: 15, description: 'size medium' },
     { id: '2', title: 'Hawaiian', price: 20, description: 'size medium' },
     { id: '3', title: 'Italiano', price: 23, description: 'size medium' },
     { id: '4', title: 'Spinach & Feta', price: 15, description: 'size medium' },
