@@ -33,6 +33,7 @@ const ProductList = () => {
         } else {
             newItems = [...addedItems, product];
         }
+        
         setAddedItems(newItems)
 
         if (newItems.length === 0) {
