@@ -5,14 +5,14 @@ import { useTelegram } from '../../hooks/useTelegram';
 import { useState } from 'react';
 
 const products = [
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
-    { id: '1', title: 'Pizza 4 cheese', price: 20, description: 'size medium' },
+    { id: '1', title: '4 cheese', price: 15, description: 'size medium' },
+    { id: '2', title: 'Hawaiian', price: 20, description: 'size medium' },
+    { id: '3', title: 'Italiano', price: 23, description: 'size medium' },
+    { id: '4', title: 'Spinach & Feta', price: 15, description: 'size medium' },
+    { id: '5', title: 'Buffalo Chicken', price: 20, description: 'size medium' },
+    { id: '6', title: 'Pepperoni', price: 15, description: 'size medium' },
+    { id: '7', title: 'BBQ Chicken', price: 23, description: 'size medium' },
+    { id: '8', title: 'Pacific Veggie', price: 20, description: 'size medium' },
 ]
 
 const getTotalPrice = (items = []) => {
@@ -33,7 +33,7 @@ const ProductList = () => {
         } else {
             newItems = [...addedItems, product];
         }
-        
+
         setAddedItems(newItems)
 
         if (newItems.length === 0) {
